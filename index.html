@@ -7,6 +7,8 @@
     <link type="text/css" rel="stylesheet" href="./styles/firework.css" />
   </head>
   <body>
+    <!-- Demo -->
+    <img src="./media/images/mute-sound.png" alt="controll" id="controller" />
     <section>
       <h1>
         Happy New Year
@@ -14,6 +16,28 @@
         <span>2021</span>
       </h1>
     </section>
+    <audio id="player" loop>
+      <source src="./media/sounds/happy-new-year.mp3" type="audio/mp3" />
+    </audio>
+    <script>
+      var isPlaying = false;
+      var controller = document.getElementById("controller");
+      var player = document.getElementById("player");
+      controller.addEventListener("click", function () {
+        if (isPlaying) {
+          controller.setAttribute("src", "./media/images/mute-sound.png");
+          player.pause();
+        } else {
+          controller.setAttribute("src", "./media/images/play-sound.png");
+          player.play();
+        }
+        isPlaying = !isPlaying;
+      });
+    </script>
+    <!-- Demo -->
+
+    <!-- JS Effects -->
     <script src="./firework.js"></script>
+    <!-- JS Effects -->
   </body>
 </html>

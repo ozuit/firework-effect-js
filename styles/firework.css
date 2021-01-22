@@ -34,6 +34,15 @@ h1 span {
   font-size: 30vw;
 }
 
+#controller {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
 @keyframes floating {
   0%,
   100% {
