@@ -7,7 +7,7 @@
   fireWork.prototype.init = function () {
     // Inject firework image
     var snowball = document.createElement("img");
-    snowball.setAttribute("src", "./media/images/firework.gif");
+    snowball.setAttribute("src", "https://ozuit.github.io/js-effects/media/images/firework.gif");
     snowball.setAttribute("width", "50px");
     snowball.setAttribute("height", "50px");
     snowball.setAttribute("style", "display: none; position: absolute");
@@ -20,7 +20,7 @@
     // Inject firework audio
     var audio = document.createElement("audio");
     var audioSource = document.createElement("source");
-    audioSource.setAttribute("src", "./media/sounds/firework.mp3");
+    audioSource.setAttribute("src", "https://ozuit.github.io/js-effects/media/sounds/firework.mp3");
     audioSource.setAttribute("type", "audio/ogg");
     audio.appendChild(audioSource);
     document.body.appendChild(audio);
